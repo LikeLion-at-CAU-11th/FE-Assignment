@@ -20,4 +20,3 @@
 
 ### 챌린지 과제
 #### 3. 적어도 하나의 스타일요소에 다크모드 구현해보기
-![image](https://user-images.githubusercontent.com/101720703/230119174-4768bc99-5b1b-4e6f-b02c-bca2bb8f1d12.png)
