@@ -4,7 +4,8 @@ const input = document.querySelector('input');
 
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
-    new Todo(input.value);
+    const toDoLists = input.value.split(',');
+    toDoLists.forEach((todo) => todo && new Todo(todo));
     input.value = '';
   }
 });
