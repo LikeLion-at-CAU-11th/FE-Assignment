@@ -11,7 +11,7 @@
 
 ## 🌈 실행결과
 
-![Alt text](../img/result.jpg)
+![Alt text](./img/result.jpg)
 
 ## 프로그래밍 요구사항
 
