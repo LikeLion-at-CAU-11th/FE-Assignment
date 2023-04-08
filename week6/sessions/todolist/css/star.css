@@ -1,0 +1,19 @@
+@keyframes bigStar {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.scaling-star {
+  animation-name: bigStar;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
