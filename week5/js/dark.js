@@ -29,9 +29,6 @@ function darkMode(e){
 
 
     if (isActive){
-        // for (let i=0; i<objToChange.length; i++){
-        //     objToChange[i].classList.add('dark')
-        // }
         objToChange.forEach(addClass);
 
         displayTitle[0].classList.add('dark-border-bottom');
@@ -40,10 +37,6 @@ function darkMode(e){
     }
 
     else{
-        for (let i=0; i<objToChange.length; i++){
-            objToChange[i].classList.remove('dark')
-            
-        }
         objToChange.forEach(removeClass);
         displayTitle[0].classList.remove('dark-border-bottom');
         displayTitle[1].classList.remove('dark-border-bottom');
