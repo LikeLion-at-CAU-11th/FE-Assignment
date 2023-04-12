@@ -1,8 +1,10 @@
 import DOM from './DOM.js';
 
-export default class Input extends DOM {
-  constructor(inputType) {
-    super('input', '');
-    this.node.type = inputType;
+class Input extends DOM {
+  constructor(innerText, className) {
+    super('input', innerText, className);
+    this.node.type = 'checkbox';
   }
 }
+
+export default Input;

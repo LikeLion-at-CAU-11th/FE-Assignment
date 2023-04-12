@@ -1,9 +1,10 @@
-export default class DOM {
-  constructor(tagType, inputText) {
-    this.node = document.createElement(tagType);
-    this.node.innerText = inputText;
-  }
-  addEvent(eventType, callbackFunction) {
-    this.node.addEventListener(eventType, callbackFunction);
+class DOM {
+  constructor(tagName, innerText, className) {
+    this.node = document.createElement(tagName);
+    this.node.innerText = innerText;
+    if (className) this.node.classList.add(className);
   }
 }
+
+//div, button, input(checkbox)
+export default DOM;

@@ -2,13 +2,14 @@
   display: flex;
   margin: 20px;
   font-size: 30px;
-  width: 400px;
+  width: 450px;
   justify-content: center;
 }
 .complete {
   text-decoration: line-through;
   color: lightgrey;
 }
+
 body {
   display: flex;
   width: 100%;
@@ -41,9 +42,28 @@ button {
   margin-top: 5px;
   width: 40px;
 }
-.todo {
+.inner {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+}
+@keyframes twinkle {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.star {
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
 }
