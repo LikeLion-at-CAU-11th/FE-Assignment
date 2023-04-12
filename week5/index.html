@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/week5/css/style.css">
+    <link rel="stylesheet" href="/week5/css/dark.css">
     <title>가위바위보</title>
     
 </head>
 
 
-<body>
-    <div id="header-wrapper" class="row">
+<body class="change">
+    <div id="header-wrapper" class="column">
         <header id="title"> rock scissors paper!</header>
+        <div class="row">
         <button>
-            <i id="reset-button" class="fa-solid fa-arrow-rotate-left"></i>
+            <i id="reset-button" class="fa-solid fa-arrow-rotate-left change-reverse"></i>
         </button> 
+        <button id="darkmode-button"> dark </button>
+        </div>
     </div>
     
-    <div id="contents-wrapper">
+    <div id="contents-wrapper" class="contents change">
         <section class="score-section row">
             <div class="score my-score">0</div>
             <div class="score">score</div>
@@ -27,7 +31,7 @@
 
         <section class="display-section row">
             <div class="display-main column">
-                <div class="display-title">Me</div>
+                <div id="display-title" class="title">Me</div>
 
                 <div class='icon-container'>
                     <i id="my-hand-icon" class="icon"></i>
@@ -38,7 +42,7 @@
             <div id="display-result"></div>
 
             <div class="display-main column">
-                <div class="display-title">Computer</div>
+                <div id="display-title" class="title">Computer</div>
 
                 <div class='icon-container'>
                     <i id="computer-hand-icon" class="icon"></i>
@@ -49,14 +53,15 @@
         </section>
 
         <section class="button-section row">
-            <button id='rock'><i id="button" class="fa-regular fa-hand-back-fist"></i></button>
-            <button id='scissors'><i id="button" class="fa-regular fa-hand-scissors fa-rotate-90"></i></button>
-            <button id='paper'><i id="button" class="fa-regular fa-hand"></i></button>
+            <button id='rock'><i id="button" class="fa-regular fa-hand-back-fist change"></i></button>
+            <button id='scissors'><i id="button" class="fa-regular fa-hand-scissors fa-rotate-90 change"></i></button>
+            <button id='paper'><i id="button" class="fa-regular fa-hand change"></i></button>
         </section>
     </div>
 
     
     <script src="https://kit.fontawesome.com/001200a43b.js" crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+    <script src="/week5/js/app.js"></script>
+    <script src="/week5/js/dark.js"></script>
 </body>
 </html>

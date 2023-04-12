@@ -49,9 +49,10 @@ function displayComChoice(result){
     computerText.innerText = result[0];
     computerIcon.className = result[1];
 
-    console.log(computerIcon.className);
 
 }
+
+
 
 
 function startGame(myChoice) {
@@ -79,6 +80,7 @@ function startGame(myChoice) {
     }
 
     displayComChoice(resultArr);
+
 
 }
 

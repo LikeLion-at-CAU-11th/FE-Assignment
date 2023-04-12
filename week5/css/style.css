@@ -33,14 +33,17 @@ button{
 /* header-wrapper 영역 */
 #reset-button{
     font-size: 15px;
-    border: black solid 2px;
     border-radius: 50%;
+    font-size: 15px;
+    
+}
 
-    text-align: center;
-
-    padding: 3px;
+.change-reverse{
+    border: black solid 2px;
     background-color: black;
     color: white;
+    text-align: center;
+    padding: 3px;
 }
 
 #title{
@@ -51,10 +54,12 @@ button{
 #contents-wrapper{
     width: 500px;
     height: 500px;
-
-    border: black solid 3px;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+.contents{
+    border: black solid 4px;
 }
 
 /* section1(점수판) */
@@ -80,11 +85,13 @@ button{
     text-align: center;
 }
 
-.display-title{
-    border-bottom: black solid 3px;
-
+#display-title{
     width: 80%;
     text-align: center;
+}
+
+.title{
+    border-bottom: black solid 3px;
 }
 
 /* section3(버튼) */
@@ -104,9 +111,16 @@ button{
     width: 70px;
     height: 70px;
 
+    font-size: 60px;
+}
+
+.fa-regular{
     border-radius: 50%;
     border: black 4px solid;
-    font-size: 60px;
+}
+
+#my-hand-icon, #computer-hand-icon{
+    border: black;
 }
 
 
