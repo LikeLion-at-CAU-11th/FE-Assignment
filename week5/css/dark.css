@@ -1,0 +1,18 @@
+.dark{
+    background-color: black;
+    color: white;
+    border: white solid 4px;
+}
+
+.dark-border-bottom{
+    color: white;
+    border-bottom: white solid 4px;
+}
+
+.dark-reverse{
+    background-color: white;
+    color: black;
+    border: white solid 2px;
+    text-align: center;
+    padding: 3px;
+}
