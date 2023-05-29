@@ -1,0 +1,43 @@
+/* 전체 선택자 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 태그 선택자 */
+body {
+    background-image: linear-gradient(to bottom, mediumspringgreen, white);
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10 0;
+}
+
+ol {
+    padding-inline-start: 20px;
+}
+
+/* 클래스 선택자 */
+.container { 
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 200 auto; 
+    width: 400px;
+    background-color: white;
+}
+
+.top {
+    border-bottom: 1px solid black;
+}
+
+/* id 선택자 */
+#writer {
+    color: gray;
+    font-weight: bold;
+    margin: 0;
+}
+

@@ -1,0 +1,21 @@
+/* 전체 선택자 : 문서의 모든 요소에 스타일을 적용 */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 클래스 선택자 : 여러 개의 요소에 스타일 적용 */
+.header {
+    background-color: lightgreen;
+}
+
+/* id 선택자 : 한 개의 요소에 스타일 적용 */
+#img {
+    width: 250px;
+    border: 1px solid lightcoral;
+}
+
+/* 타입(태그) 선택자 : 특정 태그를 사용한 모든 요소에 스타일 적용 */
+a {
+    text-decoration: none;
+    color: green;
+}
