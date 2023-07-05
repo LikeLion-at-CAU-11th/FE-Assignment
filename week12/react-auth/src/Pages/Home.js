@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from 'styled-components';
 import { useForm } from '../hooks/useForm';
 import { login } from '../apis/login';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Input, Inputs, Title, Wrapper, Form } from '../components/Common';
 
 const Home = () => {
@@ -35,6 +35,7 @@ const Home = () => {
         </Inputs>
         <Button onClick={onClick}>LOGIN</Button>
       </Form>
+      <CustomLink to="/signup">회원가입</CustomLink>
     </Wrapper>
   );
 };
@@ -49,4 +50,11 @@ const Button = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+`;
+const CustomLink = styled(Link)`
+  margin-top: 20px;
+  color: black;
+  &:visited {
+    color: black;
+  }
 `;
