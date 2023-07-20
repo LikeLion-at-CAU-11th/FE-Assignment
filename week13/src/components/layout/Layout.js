@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {Button} from './common';
 import { ThemeContext } from '../../context/context';
 import { useRecoilValue } from 'recoil';
-
 import {userNameAtom, emailAtom, isSubmitedAtom} from '../../recoil/atoms';
 
 const Layout = ({children}) => {
